@@ -1,0 +1,316 @@
+@font-face {
+    font-family: Eina;
+    src: url('../fonts/eina-01-bold.eot');
+    src: url('../fonts/eina-01-bold.woff2') format('woff2'),
+         url('../fonts/eina-01-bold.ttf') format('truetype'),
+         url('../fonts/eina-01-bold.woff') format('woff');
+  }
+
+
+  ::-webkit-scrollbar {
+      display: none;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.1432s all ease;
+}
+
+html {
+	font-size: 16px;
+	line-height: 1.8;
+	color: #111;
+}
+
+body {
+    font-family: Eina, "Poppins", sans-serif;
+    overflow-x: hidden;
+    background: white;
+}
+
+::selection { background: yellow; }
+
+a { -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; }
+a {
+    color: #111;
+}
+a:hover, a:active, a:focus { text-decoration: none; outline: none; }
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Eina, "Poppins", sans-serif;
+    color: #111;
+    letter-spacing: -.04em;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 40px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+/* h2{}
+h3{}
+h3{} */
+h5 {
+    font-size: 16px;
+}
+
+
+.button-primary {
+    padding: 8px 32px;
+    background: none;
+    border: 2px solid #111;
+    color: #111;
+}
+
+.button-primary:hover {
+    background: #111;
+    border: 2px solid #111;
+    color: white;
+}
+
+
+small.h1upperline {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #777;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #777;
+    font-size: 1rem;
+}
+
+
+
+#landing {
+    min-height: auto;
+}
+
+@media screen and (min-width: 600px) {
+    #landing {
+        height: 100vh;
+    }
+}
+
+
+#landing .main-content {
+    padding: 0 85px;
+}
+
+@media screen and (max-width: 600px) {
+    #landing .h1upperline {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #landing h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #landing .contentPar {
+        text-align: center;
+    }
+
+    .button-primary {
+        margin: 25px 0;
+        width: 100%; 
+    }
+    #landing .main-content {
+        padding: 20vh 45px;
+        min-height: 600px;
+        background-image: url("../img/product2.jpg");
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+}
+
+#landing .icon-logo_container {
+    margin-bottom: 50px;
+    position: absolute;
+    top: 2rem;
+}
+
+#landing .icon-logo {
+    width: 50px;
+    border-radius: 100%;
+}
+
+#landing .landing-ads {
+    background: url("../img/ads2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#landing .featured-product_img {
+    width: 60%;
+    height: 60%;
+    background: url("../img/product.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#landing .featured-product small {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #777;
+}
+
+
+
+#landing .landing-slider .swiper-container {
+    width: 100%;
+    height: 100%;
+    background: purple;
+    position: relative;
+  }
+
+  #landing .landing-slider .swiper-arrow {
+    background: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+  }
+  #landing .landing-slider .swiper-arrow .swiper-nav {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #landing .landing-slider .swiper-arrow .swiper-nav a {
+    font-size: 1.34rem;
+    color: white;
+}
+
+  #landing .landing-slider .swiper-slide {
+    background-size: cover;
+    background-position: top top;
+    background-repeat: no-repeat;
+  }
+
+  #landing .landing-slider .slide-1 { background-image: url("../img/hero1.jpg");}
+  #landing .landing-slider .slide-2 { background-image: url("../img/hero2.jpg");}
+  #landing .landing-slider .slide-3 { background-image: url("../img/hero3.jpg");}
+  
+
+#modal-1 .init-popup-img {
+    height: 300px;
+    background: url("../img/dev.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+#modal-2 .init-popup-img {
+    display: flex;
+    align-items: center;
+}
+
+#modal-2 .init-popup-img img {
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+}
+
+#modal-2 .init-popup-img .title {
+    margin-bottom: 0;
+    margin-left: 25px;
+}
+
+
+
+
+#modal-2 .links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 40px;
+    font-family: Eina, "Poppins", sans-serif;
+    color: #111;
+}
+
+#modal-2 .links li {
+    transition: 0.3s all ease;
+}
+
+#modal-2 .links a i {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background: url("../img/link_sprites.png");
+    margin-right: 15px;
+    transform: scale(.7);
+}
+
+#modal-2 .links a i.web {
+    background-position: 0px 0px;
+}
+#modal-2 .links a i::after {
+    background: url("../img/link_sprites.png");
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s all ease;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#modal-2 .links li:hover {
+    background: rgba(176, 176, 233, 0.2);
+}
+
+#modal-2 .links a i.web::after {background-position: 52px 0px;}
+#modal-2 .links a i.whatsapp::after {background-position: 52px -52px;}
+#modal-2 .links a i.shopee::after {background-position: 52px -104px;}
+#modal-2 .links a i.tokopedia::after {background-position: 52px -156px;}
+
+#modal-2 .links a:hover i.web::after,
+#modal-2 .links a:hover i.whatsapp::after,
+#modal-2 .links a:hover i.tokopedia::after,
+#modal-2 .links a:hover i.shopee::after {
+    opacity: 1;
+    transition: 0.3s all ease;
+}
+
+#modal-2 .links a.web:hover {color: blue;}
+#modal-2 .links a.whatsapp:hover {color: green;}
+#modal-2 .links a.tokopedia:hover {color: green;}
+#modal-2 .links a.shopee:hover {color: orangered;}
+
+#modal-2 .links a i.whatsapp {
+    background-position: 0px -52px;
+}
+
+#modal-2 .links a i.shopee {
+    background-position: 0px -104px;
+}
+
+#modal-2 .links a i.tokopedia {
+    background-position: 0px -156px;
+}
+
